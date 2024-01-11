@@ -37,7 +37,7 @@ function App() {
     setPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
   }
   return (
-    <main>
+    <main className="grid">
       {GRID.map((i) => (
         <button onClick={() => handleClick(i)} key={i} className="square">
           {plays.get(i)}
